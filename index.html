@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>PassportAI - AI Passport Photo Generator</title>
+
+<meta name="description"
+      content="Generate passport-size photos instantly using AI. Supports India, USA, UK, Canada and more.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="style2.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">
+        PassportAI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#editor">Editor</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="nav-btn"
+            onclick="document.getElementById('editor').scrollIntoView({behavior:'smooth'})">
+        Get Started
+    </button>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="badge">
+            🚀 AI Powered Passport Photo Generator
+        </span>
+
+        <h1>
+            Create Passport Photos
+            In Seconds Using AI
+        </h1>
+
+        <p>
+            Upload your image and automatically generate
+            passport-ready photos with AI-based cropping,
+            resizing, background cleanup and formatting.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn"
+                    onclick="document.getElementById('imageInput').click()">
+                Upload Photo
+            </button>
+
+            <button class="secondary-btn"
+                    onclick="document.getElementById('editor').scrollIntoView({behavior:'smooth'})">
+                Open Editor
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UPLOAD -->
+<section class="upload-section">
+
+    <h2>Upload Your Photo</h2>
+
+    <p>
+        Drag & Drop your image or click below
+    </p>
+
+    <div class="upload-box" id="dropArea">
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+            hidden
+        >
+
+        <div class="upload-content">
+
+            <div class="upload-icon">
+                📷
+            </div>
+
+            <h3>Select Image</h3>
+
+            <p>
+                JPG, PNG, WEBP Supported
+            </p>
+
+            <button id="uploadBtn">
+                Choose File
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+
+    <h2>Powerful Features</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <h3>AI Face Detection</h3>
+            <p>
+                Automatically detects and centers your face.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Passport Framing</h3>
+            <p>
+                Includes forehead, hair, chin and shoulders.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Smart Compression</h3>
+            <p>
+                Export in 20KB, 50KB or 100KB.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Country Templates</h3>
+            <p>
+                India, USA, UK, Canada and more.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDITOR -->
+<section class="editor" id="editor">
+
+    <h2>
+        Passport Photo Editor
+    </h2>
+
+    <div class="editor-panel">
+
+        <!-- LEFT -->
+        <div class="editor-left">
+
+            <label for="country">
+                Country Template
+            </label>
+
+            <select id="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+
+            <label for="size">
+                Output Size
+            </label>
+
+            <select id="size">
+                <option>20 KB</option>
+                <option selected>50 KB</option>
+                <option>100 KB</option>
+            </select>
+
+            <label for="imageFormat">
+                Image Format
+            </label>
+
+            <select id="imageFormat">
+                <option value="jpeg">JPG</option>
+                <option value="png">PNG</option>
+                <option value="webp">WEBP</option>
+            </select>
+
+            <button id="generateBtn">
+                Generate Passport Photo
+            </button>
+
+            <button id="downloadBtn">
+                Download Passport Photo
+            </button>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="editor-right">
+
+            <div class="result-preview">
+                <canvas id="canvas"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+    <div class="stat-card">
+        <h3>99.8%</h3>
+        <p>Detection Accuracy</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>150+</h3>
+        <p>Countries Supported</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>1M+</h3>
+        <p>Photos Generated</p>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+    <h2>
+        Create Your Passport Photo Today
+    </h2>
+
+    <p>
+        Fast, AI-powered passport photo generation.
+    </p>
+
+    <button class="primary-btn"
+            onclick="document.getElementById('editor').scrollIntoView({behavior:'smooth'})">
+        Start Free
+    </button>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+
+    <h3>
+        PassportAI
+    </h3>
+
+    <p>
+        AI Passport Photo Generator
+    </p>
+
+    <p>
+        Email: a96628130@gmail.com
+    </p>
+
+    <p>
+        © 2026 PassportAI. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+<!-- APP -->
+<script src="app2.js"></script>
+
+
+
+
+
+</body>
+</html>
