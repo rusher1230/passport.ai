@@ -1,1 +1,3 @@
 # passport.ai
+
+Passport Size Image Generator – A lightweight web tool to create and compress passport-size photos with customizable file size limits (20KB, 50KB, 100KB) without compromising essential image clarit… 
